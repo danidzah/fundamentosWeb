@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTATO</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
-<body>
+<body> 
     <ul>
         <a href="index.html">HOME</a>
         <a href="contato.html">CONTATO</a>
     </ul>
 
-    <H1 classe="center">Entre em contato</H1>
+<div class="center">
+    <H1>Entre em contato</H1>
+</div>
 
    <div class="container">
     <div>
@@ -20,18 +25,20 @@
         <form>
             <br>
             <label for="nome">Nome:</label><br>
-            <input type="text" id="nome">
+            <input type="text" id="nome" onkeyup="validaNome()">
+            <div id="txtNome"></div>
             <br>
-            <br>
+
             <label for="email">E-mail:</label><br>
-            <input type="email" id="email">
-            <br>
+            <input type="email" id="email" onkeyup="validaEmail()">
+            <div id="txtEmail"></div>
+           
             <br>
             <label for="assunto">Assunto:</label><br>
-            <textarea name="assunto" id="assunto" cols="30" rows="5"></textarea>
+            <textarea name="assunto" id="assunto" cols="30" rows="5" onkeyup="validaAssunto()"></textarea>
+            <div id="txtAssunto"></div>
             <br>
-            <br>
-            <button>Enviar</button>
+            <button onclick="enviar()">Enviar</button>
         </form>
     </div>
 
@@ -46,7 +53,7 @@
         style="border:0;" 
         allowfullscreen="" 
         loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
     </div> 
 </div>
 
@@ -66,6 +73,9 @@
 <p class="center">  Todos os direito reservados: Daniela Oliveira &copy;
 </p>
 </footer>
+
+<script src="assets/js/script.js"></script>
+
 
 </body>
 </html>

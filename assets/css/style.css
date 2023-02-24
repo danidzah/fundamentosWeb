@@ -12,7 +12,7 @@ Estilos da página index.html
 .container{
     display: flex;
     flex-flow: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 #menu li{
@@ -44,4 +44,7 @@ Estilos da página contato.html
 */
 .ml-50{
     margin-left: 50px;
+}
+.w-50{
+    width: 50%;
 }
