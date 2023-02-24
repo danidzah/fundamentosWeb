@@ -24,7 +24,7 @@ Estilos da página index.html
     color:black
 }
 #menu li a:hover{
-    color: #FF69B4;
+    color: #ff93b2;
 }
 .p-15{
     padding: 15px;
@@ -38,7 +38,19 @@ Estilos da página index.html
 }
 .mb-50{
   margin-bottom: 50px;
+
 }
+.background{
+    background-color: #ffcc66;
+}
+.txtColor{
+    font-style: "color" #ffffff ;
+}
+.background-Capa{
+    background-color: #ff93b2;
+}
+
+
 /*
 Estilos da página contato.html
 */
